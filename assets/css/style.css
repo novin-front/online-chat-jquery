@@ -1,4 +1,15 @@
-body{
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir.eot');
+    src: url('../fonts/Vazir.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Vazir.woff2') format('woff2'),
+        url('../fonts/Vazir.woff') format('woff'),
+        url('../fonts/Vazir.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body,input{
+    font-family: Vazir;
     direction: rtl;
 }
 .btn-custom {
@@ -18,6 +29,7 @@ body{
     line-height: 1.5;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     cursor: pointer;
+    font-family: Vazir;
 }
 /******* online chat style *****/
 .online-chat {
@@ -128,7 +140,7 @@ body{
 
 .chat-avatar-img i {
     font-size: 38px;
-    color: #f4f4f4;
+    color: #fff;
     transform: translateY(10px);
 }
 
@@ -179,6 +191,7 @@ body{
     border: 0;
     border-radius: 2px;
     font-size: 1rem;
+    font-family: Vazir;
     padding: 10px;
     -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.28);
     -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.28);
@@ -207,12 +220,14 @@ body{
     }
     .chat-message-box{
         min-height: 75vh;
+        max-height: 450px;
         height: auto;
     }
 }
 @media screen and (max-width:340px) {
     .chat-message-box {
         min-height: 70vh;
+        max-height: 300px;
         height: auto;
     }
 }
