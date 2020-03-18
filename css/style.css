@@ -97,12 +97,12 @@ body{
 }
 
 .chat-message-box::-webkit-scrollbar-thumb {
-    background: #bf7244;
+    background: #99c5e9;
     border-radius: 10px;
 }
 
 .chat-message-box::-webkit-scrollbar-thumb:hover {
-    background: #a8643b;
+    background: #99c5e9;
 }
 .chat-supporter-message {
     display: flex;
@@ -197,3 +197,22 @@ body{
 }
 
 /******** Footer style **************/
+
+@media screen and (max-width:520px){
+    .online-chat-section{
+        width: 100%;
+        right: 0;
+        bottom: 0;
+        height: 100vh;
+    }
+    .chat-message-box{
+        min-height: 75vh;
+        height: auto;
+    }
+}
+@media screen and (max-width:340px) {
+    .chat-message-box {
+        min-height: 70vh;
+        height: auto;
+    }
+}
